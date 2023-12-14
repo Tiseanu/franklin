@@ -1,0 +1,13 @@
+{
+    "project": "Franklin Pages",
+    "host": "https://main--franklin--tiseanu.hIx.live",
+    "plugins": [
+        {
+            "id": "library",
+            "title": "Library",
+            "environments": ["edit"],
+            "url": "/tools/sidekick/library.html",
+            "includePaths": ["*.docx*"]
+        }
+    ]
+}
