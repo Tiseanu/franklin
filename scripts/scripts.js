@@ -15,6 +15,8 @@ import {
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
+console.log('this is from scripts')
+
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
@@ -126,9 +128,19 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
+function addIdsToEachSection() {
+  document.querySelectorAll('main .section > div:first-of-type').forEach((item) => {
+    const getIdentity = item.className.split('-wrapper')[0];
+    item.parentElement.id = document.getElementById(getIdentity) ? `${getIdentity}-2` : getIdentity;
+  });
+}
+
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
+
+  addIdsToEachSection();
+
   loadDelayed();
 }
 

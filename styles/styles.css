@@ -139,6 +139,14 @@ a:hover {
   color: var(--link-hover-color);
 }
 
+.section[data-align = center] {
+  text-align: center;
+}
+
+.section[data-align = right] {
+  text-align: right;
+}
+
 /* buttons */
 a.button:any-link, button {
   font-family: var(--body-font-family);
@@ -215,6 +223,15 @@ main img {
   max-width: 100%;
   width: auto;
   height: auto;
+}
+
+main .sections {
+  position: relative;
+  padding: 15px;
+}y
+
+main .default-content-wrapper {
+  padding: 1em 15px;
 }
 
 .icon {
