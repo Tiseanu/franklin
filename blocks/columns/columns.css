@@ -17,6 +17,14 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.w60 {
+  width: 60%;
+  margin: 0 auto;
 }
 
 @media (width >= 900px) {
