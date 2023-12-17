@@ -1,5 +1,6 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
+import { getLocalizedResourceUrl } from '../../scripts/utils,js';
 
 /**
  * loads and decorates the footer
@@ -10,7 +11,7 @@ export default async function decorate(block) {
   block.textContent = '';
 
   // load footer fragment
-  const footerPath = footerMeta.footer || '/footer';
+  const footerPath = getLocalizedResourceUrl('footer');
   const fragment = await loadFragment(footerPath);
 
   // decorate footer DOM
