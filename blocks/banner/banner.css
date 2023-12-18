@@ -3,7 +3,7 @@
     color: white;
     padding: 0;
   }
-  .section .banner img {
+  .section.banner-container.section .banner img {
     width: 100%;
   }
   .section .banner h1 {

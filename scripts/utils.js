@@ -12,3 +12,10 @@ export function getLocalizedResourceUrl(resourceName) {
 
     return `${pathnameAsArray.join('/')}${resourceName}`;
 }
+
+export function getDefaultLanguage() {
+    const localisationList = ['en', 'es'];
+    const currentPathUrl = window.location.pathname;
+    const foundLanguage = localisationList.find((item) => currentPathUrl.indexOf(`/${item}/`) !== -1);
+    return foundLanguage || 'en';
+}

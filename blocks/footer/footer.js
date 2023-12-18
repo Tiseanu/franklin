@@ -1,6 +1,6 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
-import { getLocalizedResourceUrl } from '../../scripts/utils,js';
+import { getLocalizedResourceUrl } from '../../scripts/utils.js';
 
 /**
  * loads and decorates the footer
